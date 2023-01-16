@@ -11,5 +11,7 @@
 	<%for(int i = 0; i<5; i++){ %>
 	<h1>Hello index.jsp</h1>
 	<%} %>
+	
+	<a href="/helloweb/hello?id=shin">인사하기</a>	
 </body>
 </html>

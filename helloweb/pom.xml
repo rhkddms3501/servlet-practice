@@ -7,9 +7,9 @@
 	</parent>
 	<artifactId>helloweb</artifactId>
 	<packaging>war</packaging>
+	
 	<dependencies>
 		<!-- servlet -->
-		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
