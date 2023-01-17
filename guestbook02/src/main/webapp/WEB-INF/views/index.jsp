@@ -3,7 +3,7 @@
 <%@page import="com.douzone.guestbook02.vo.GuestbookVo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	List<GuestbookVo> list = new GuestbookDao().findAll();
+	List<GuestbookVo> list = (List<GuestbookVo>)request.getAttribute("list");
 %>
 <html>
 <head>
@@ -13,7 +13,8 @@
 <body>
 
 	<!-- 입력 -->
-	<form action="/guestbook01/add.jsp" method="post">
+	<form action="/guestbook02/gb" method="post">
+	<input type="hidden" name="a" value="add">
 	<table border=1 width=500>
 		<tr>
 			<td>이름</td><td><input type="text" name="name"></td>
@@ -41,7 +42,7 @@
 			<td>[ <%=i + 1 %>]</td>
 			<td><%=list.get(i).getName() %></td>
 			<td><%=list.get(i).getRegDate() %></td>
- 			<td><a href="/guestbook01/deleteform.jsp?no=<%=list.get(i).getNo() %>">삭제</a></td>
+ 			<td><a href="/guestbook02/gb?a=deleteform&no=<%=list.get(i).getNo() %>">삭제</a></td>
 		</tr>
 		<tr>
 			<td colspan=4><%=list.get(i).getMessage() %></td>
