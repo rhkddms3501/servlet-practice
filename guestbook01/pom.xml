@@ -32,7 +32,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>geustbook01</finalName>
+		<finalName>guestbook01</finalName>
 	</build>
 	
 </project>
