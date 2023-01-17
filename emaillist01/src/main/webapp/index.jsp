@@ -43,7 +43,7 @@
 	
 	<p>
 		<!-- 절대경로 -->
-		<a href="/emaillist01/form.jsp">추가메일 등록</a>
+		<a href="/emaillist01/form.jsp">새 메일 등록</a>
 	</p>
 	<br>
 </body>
