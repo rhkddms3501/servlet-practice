@@ -11,7 +11,7 @@
 <title>방명록</title>
 </head>
 <body>
-
+	<h1>방명록예제</h1>
 	<!-- 입력 -->
 	<!-- <form action="/guestbook02/gb" method="post"> -->
 	<form action="<%=request.getContextPath() %>/gb" method="post">
