@@ -13,7 +13,8 @@
 <body>
 
 	<!-- 입력 -->
-	<form action="/guestbook02/gb" method="post">
+	<!-- <form action="/guestbook02/gb" method="post"> -->
+	<form action="<%=request.getContextPath() %>/gb" method="post">
 	<input type="hidden" name="a" value="add">
 	<table border=1 width=500>
 		<tr>
@@ -42,7 +43,8 @@
 			<td>[ <%=i + 1 %>]</td>
 			<td><%=list.get(i).getName() %></td>
 			<td><%=list.get(i).getRegDate() %></td>
- 			<td><a href="/guestbook02/gb?a=deleteform&no=<%=list.get(i).getNo() %>">삭제</a></td>
+ 			<%-- <td><a href="/guestbook02/gb?a=deleteform&no=<%=list.get(i).getNo() %>">삭제</a></td> --%>
+ 			<td><a href="<%=request.getContextPath() %>/gb?a=deleteform&no=<%=list.get(i).getNo() %>">삭제</a></td>
 		</tr>
 		<tr>
 			<td colspan=4><%=list.get(i).getMessage() %></td>

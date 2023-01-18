@@ -9,5 +9,7 @@
 	
 	new GuestbookDao().deleteByNo(no, password);
 	
-	response.sendRedirect("/guestbook01/index.jsp");	
+	
+	/* response.sendRedirect("/guestbook01/index.jsp"); */	
+	response.sendRedirect(request.getContextPath() + "/index.jsp");
 %>
