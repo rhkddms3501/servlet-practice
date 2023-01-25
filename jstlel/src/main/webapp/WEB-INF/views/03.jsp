@@ -10,8 +10,8 @@
 </head>
 <body>
 	<h1>JSTL Example : forEach</h1>
-	<c:forEach items="${list }" var="vo">
-		<p>${vo.no } : ${vo.name }<p>
+	<c:forEach items="${list }" var="vo" varStatus="status">
+		<p>[${status.index} : ${status.count}] ${vo.no } : ${vo.name }<p>
 	</c:forEach>	
 </body>
 </html>
