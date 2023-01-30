@@ -1,4 +1,4 @@
-﻿<%@page import="java.util.List"%>
+<%@page import="java.util.List"%>
 <%@page import="com.douzone.emaillist.vo.EmaillistVo"%>
 <%@page import="com.douzone.emaillist.dao.EmaillistDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -6,7 +6,7 @@
 <!-- Controller 부분 -->
 <!-- ctrl + space 눌러서 import 꼭 해주기. (List, EmaillistVo, EmaillistDao) -->
 <%
-	List<EmaillistVo> list = new EmaillistDao().findAll();
+List<EmaillistVo> list = new EmaillistDao().findAll();
 %>
 <html>
 <head>
